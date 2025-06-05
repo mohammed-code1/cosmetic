@@ -1,0 +1,97 @@
+header .navbar{
+    position: absolute ;
+    background: transparent;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .navbar.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    -webkit-transition: all 15ms ease-in-out;
+    -moz-transition: all 15ms ease-in-out;
+    -o-transition: all 15ms ease-in-out;
+    -ms-transition:all 15ms ease-in-out;
+    transition: all 15ms ease-in-out;
+    animation: stickyNav;
+    animation-duration: 0.5s;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+    -moz-box-shadow: 0 2px 3px rgba(96, 96, 96, 0.1);
+    box-shadow: 0 2px 3px rgba(96,96,96,0.1);
+}
+@keyframes stickyNav{
+    0%{
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);
+        transform: translate3d(0,-100%,0);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+header .logo img{
+    width: auto;
+    max-width: inherit;
+    max-height: 80px;
+}
+header .nav-link{
+    color: var(--white);    
+    display: inline-flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0px 15px !important;
+    text-transform: uppercase;
+    transition: all 15ms ease-in-out;
+}
+header .sticky .nav-link{
+    color: var(--light-black) !important;
+}
+header .nav-link:hover{
+    color:  var(--yellow) !important;
+}
+header .cart{
+    position: relative;
+    top: -5px;
+}
+header .cart .round{
+    width: 16px;
+    height: 16px;
+    background: var(--light-red);
+    border-radius: 50%;
+    color: var(--white);
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    right: -8px;
+}
+
+@media (max-width: 992px){
+    header .navbar{
+        color: var(--white);
+    }
+    header .navbar-toggler{
+        border: none;
+    }
+    header .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    header .navbar-toggler-icon{
+        height: 30px;
+        width: 30px;
+    }
+    header .nav-link{
+        color: var(--light-black);
+        padding: 15px !important;
+    }
+}

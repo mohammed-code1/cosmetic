@@ -1,0 +1,195 @@
+.first{
+    position: relative;
+    background: url(../assets/hero-1.jpg) no-repeat center center;
+    background-attachment: fixed;
+    padding-top: 170px;
+    padding-bottom: 90px;
+    background-size: cover;
+}
+
+.first .pricetag{
+    background: url(../assets/price-badge-yellow.png) no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: -20px;
+    right: 8px;
+    width: 180px;
+    height: 176px;
+    text-align: center;
+}
+.first .pricetext{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.first_text .firsth1{
+    font-size: 100px;
+    color: var(--white);
+    margin-bottom: 25px;
+}
+.first_text .sech2{
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+.first_text .firstp{
+    padding: 0 15%;
+    color: var(--white);
+
+}
+
+/* section2 */
+
+.section2{
+    padding-top: 80px;
+    /* padding-bottom: 100px; */
+}
+.section2 h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.section2 p{
+    font-size: 20px;
+    color: var( --grey);
+    margin-bottom: 25px;
+}
+
+.section2 img{
+    margin-top: 40px;
+    width: 100%;
+}
+/* section3 */
+.section3{
+    padding-top: 90px;
+    background: var(--light-grey);
+}
+.section3 .th2{
+    font-size: 50px;
+    color: var(--light-red);
+}
+.section3 .tp{
+    font-size: 19px;
+    padding: 10px 100px;
+}
+.section3 .card-img-top{
+    transition: all 500ms ease-in-out;  
+}
+.section3 .wishlist i {
+    color: var(--grey);
+    font-size: 20px;
+    cursor: pointer;
+}
+.section3 .wishlist i:hover {
+    color: var(--light-red);
+}
+.section3 .card-title{
+    font-family: var(--oswald-font);
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.section3 .card-text{
+    color: var(--grey);
+    font-size: 15px;
+}
+.section3 .pro_price{
+    background-color: var(--bg-coffee);
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 4px;
+}
+.section3 .pro_price h5{
+    color: var(--yellow) !important;
+    font-size: 14px;
+}
+.section3 .add_to_cart button{
+    background-color: var(--yellow) !important;
+    border: none;
+    color: black;
+    display: inline-block; 
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    padding: 8px 14px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 500ms ease-in-out;
+    text-decoration: none !important;
+}
+/* a was there instead of button */
+.section3 .card:hover .card-img-top{
+    transform: scale(1.1);
+}
+.section3 .card:hover  .add_to_cart button{
+    transform: scale(1.1);
+    opacity: 1;
+}
+/* section4 */
+.sec4{
+    padding-top: 20px;
+}
+.sec4 .paralax{
+    background: url(../assets/par.JPG) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+}
+.section5{
+    padding-top: 100px;
+    background: var(--light-grey);
+    padding-bottom: 50px;
+}
+
+.section5 h2{
+    font-size: 50px;
+}
+.section5 h1{
+    font-size: 60px;
+}
+.section5 p{
+    font-size: 20px;
+}
+.section5 img{
+    height:200px;
+    width: 200px;
+}
+.section6{
+    padding-top: 100px;
+    background: url(../assets/blog/reviews.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    height: 700px;
+}
+.section6 .reviews{
+    padding-top: 20px;
+}
+.section6 .user{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+.section6 .carousel.slide .carousel-inner .carousel.caption p{
+     font-size: 24px;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: 0 12%;
+    margin-bottom: 25px ;
+    z-index: 100;;
+}
+/* footer */
+
+footer{
+    padding-top: 40px;
+}
+footer ul li{
+    display: inline-block;
+    padding-right: 20px;
+}
